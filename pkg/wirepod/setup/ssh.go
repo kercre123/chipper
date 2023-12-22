@@ -44,7 +44,7 @@ func runCmd(client *ssh.Client, cmd string) (string, error) {
 }
 
 func SetupBotViaSSH(ip string, key []byte) error {
-	if runtime.GOOS == "android" {
+	if runtime.GOOS == "android" || runtime.GOOS == "ios" {
 		SetupScriptPath = vars.AndroidPath + "/static/pod-bot-install.sh"
 	}
 	if !SSHSettingUp {
@@ -158,7 +158,7 @@ func SetupBotViaSSH(ip string, key []byte) error {
 		scpClient.Session.Close()
 		certPath := vars.CertPath
 		if vars.APIConfig.Server.EPConfig {
-			if runtime.GOOS == "android" {
+			if runtime.GOOS == "android" || runtime.GOOS == "ios" {
 				certPath = vars.AndroidPath + "/static/epod/ep.crt"
 			} else {
 				certPath = "./epod/ep.crt"
