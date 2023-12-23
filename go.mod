@@ -4,7 +4,6 @@ go 1.18
 
 require (
 	github.com/Picovoice/leopard/binding/go v1.2.0
-	github.com/alphacep/vosk-api/go v0.3.46
 	github.com/asticode/go-asticoqui v0.2.0
 	github.com/bramvdbogaerde/go-scp v1.2.1
 	github.com/digital-dream-labs/api v0.0.0-20210824232136-8cc90c1bb12c
@@ -16,6 +15,7 @@ require (
 	github.com/go-audio/wav v1.1.0
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/uuid v1.5.0
+	github.com/kercre123/vosk-api/go v1.0.2
 	github.com/maxhawkins/go-webrtcvad v0.0.0-20210121163624-be60036f3083
 	github.com/ncruces/zenity v0.10.10
 	github.com/orcaman/writerseeker v0.0.0-20200621085525-1d3f536ff85e
